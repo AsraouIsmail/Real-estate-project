@@ -4,6 +4,7 @@ import React, {useState} from 'react'
 import { HiMenuAlt4 } from "react-icons/hi";
 import { FaRegTimesCircle } from "react-icons/fa";
 import { BsFillHouseFill } from "react-icons/bs";
+import "animate.css";
 import './Navbar.css';
 
 const Navbar = () => {
@@ -17,14 +18,16 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="container">
-        <h1>
+        <h1 className="animate__animated animate__bounceInDown">
           <span>
             <BsFillHouseFill />
             Real
           </span>
           Estate
         </h1>
-        <button className="btn">Sign In</button>
+        <button className="btn animate__animated animate__flash">
+          Sign In
+        </button>
         <ul className={toggle ? "nav-menu active" : "nav-menu"}>
           <li>
             <a href="#">Home</a>
