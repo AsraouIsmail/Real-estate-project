@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import "animate.css";
-import './Hero.css'
+import "./Home.css";
 
-const Hero = () => {
+const Home = () => {
   return (
     <div className="hero">
       <div className="content">
@@ -31,6 +31,6 @@ const Hero = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Hero
+export default Home;

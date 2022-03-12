@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-unused-vars */
 import React, {useState} from 'react'
+import { Link } from 'react-router-dom';
 import { HiMenuAlt4 } from "react-icons/hi";
 import { FaRegTimesCircle } from "react-icons/fa";
 import { BsFillHouseFill } from "react-icons/bs";
@@ -25,21 +26,24 @@ const Navbar = () => {
           </span>
           Estate
         </h1>
-        <button className="btn animate__animated animate__flash">
+        <Link to="/login">
+           <button className="btn animate__animated animate__flash">
           Sign In
         </button>
+        </Link>
+       
         <ul className={toggle ? "nav-menu active" : "nav-menu"}>
           <li>
-            <a href="#">Home</a>
+            <Link to="/home">Home</Link>
           </li>
           <li>
-            <a href="#">Search</a>
+            <Link to="/login">Sign In</Link>
           </li>
           <li>
-            <a href="#">About</a>
+            <Link to="/featured">Featured Luxury</Link>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <Link to="/best">Best Appartement</Link>
           </li>
         </ul>
         <div className="hamburger" onClick={handleToggle}>
