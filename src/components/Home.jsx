@@ -19,9 +19,9 @@ const Home = () => {
             <input type="text" placeholder="Enter Keyword.." />
           </div>
           <div className="radio">
-            <input type="radio" checked />
+            <input type="radio"  value="Buy" />
             <label>Buy</label>
-            <input type="radio" />
+            <input type="radio"  value="Rent"/>
             <label>Rent</label>
             <button type="submit">
               <AiOutlineSearch className="icon" />
